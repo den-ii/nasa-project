@@ -1,5 +1,7 @@
 name: developement-server
-on: push
+on:
+  - push
+  - workflow_dispatch
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
