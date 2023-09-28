@@ -26,7 +26,7 @@ jobs:
         continue-on-error: true
         run: npm install
       - name: testing
-        run: npm run test-watch
+        run: npm run test-watch -- --watchAll=false
   deploy:
     runs-on: ubuntu-latest
     needs: test
