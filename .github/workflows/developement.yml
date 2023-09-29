@@ -52,6 +52,6 @@ jobs:
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ env.DOCKER_PASSWORD }}
       - name: build image
-        run: docker build -t ${{ env.DOCKERHUB_USERNAME }}/nasa-project .
+        run: docker build -t ${{ env.DOCKER_USERNAME }}/nasa-project .
       - name: push image
-        run: docker push ${{ env.DOCKERHUB_USERNAME }}/nasa-project
+        run: docker push ${{ env.DOCKER_USERNAME }}/nasa-project
